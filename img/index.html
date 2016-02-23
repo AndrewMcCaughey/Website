@@ -1,0 +1,435 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mens Buns and Beards</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> <!--favicon-->
+        <link rel="icon" href="/favicon.ico" type="image/x-icon"> <!--favicon-->
+
+        <!--CSS Stylesheets-->
+
+        <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+        <link rel="stylesheet" type="text/css" media="all" href="css/buttons.css"> 
+        <link rel="stylesheet" type="text/css" media="all" href="css/paymentbox.css"> 
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+
+        <!--favicon-->
+
+        <link rel="shortcut icon" href="http://www.iconj.com/ico/s/n/snyfanowkh.ico" type="image/x-icon" /> 
+
+        <!--JQUERY-->
+
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollTo.js"></script> 
+        <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+
+        <!--FONTS-->
+
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+        <!--MODAL BOX-->
+
+        <script>
+    
+            $(document).on('ready', function() {
+                $modal = $('.modal-frame');
+                $overlay = $('.modal-overlay');
+
+                /* Need this to clear out the keyframe classes so they dont clash with each other between ener/leave. Cheers. */
+                $modal.bind('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+                    if ($modal.hasClass('state-leave')) {
+                        $modal.removeClass('state-leave');
+                    }
+                });
+
+                $('.close').on('click', function() {
+                    $overlay.removeClass('state-show');
+                    $modal.removeClass('state-appear').addClass('state-leave');
+                });
+
+                $('.open').on('click', function() {
+                    $overlay.addClass('state-show');
+                    $modal.removeClass('state-leave').addClass('state-appear');
+                });
+
+            });
+
+        </script>
+
+        <!-- FLEX SLIDER -->
+
+        <script type="text/javascript" charset="utf-8">
+            $(window).load(function() {
+                $('.flexslider').flexslider();
+            });
+        </script>
+
+        <!-- SMOOTH SCROLL -->
+
+        <script>
+            $(function() {
+                $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <!-- FANCY BOX -->
+
+        <!-- Add mousewheel plugin (this is optional) -->
+        <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+        <!-- Add fancyBox -->
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+        <!-- Optionally add helpers - button, thumbnail and/or media -->
+        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+        <!--responsive css-->
+        <link rel="stylesheet" href="css/responsive.css" type="text/css">
+
+    </head>
+
+    <body>    
+
+        <div id="container">
+
+            <!--section1-->
+
+            <div id="section1-container">
+
+                <h3>
+
+                    <div class="header-container" style="position: relative">
+
+                        <img alt="bordertop" style="position: absolute;top:10px;left:0px;width:100%;" src="img/borderblacktop.png">
+
+                        <div class="top-bar-container">
+                            <div class="top-bar">
+                            </div>
+                            <nav class="nav-bar">
+                                <ul class="underlining">
+                                    <li class="hover"><a href="#section2-container" >About</a></li>
+                                    <li class="hover"><a href="#section3-container" >Gallery</a></li>
+                                    <li class="hover"><a href="#section4-container">Menu</a></li>
+                                    <li class="hover"><a href="#section5-container">Contact</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                </h3>
+
+                <div class="section1text-container" >
+
+                    <h1 style="" class="first-h1">find the right cut at</h1>
+
+                    <h1 style=""  class="second-h1">mens buns & beards</h1>
+
+                    <h4>
+
+                        <!--button1-->
+
+                        <a href="#section5-container" class="btn paper paper-curl book-button">BOOK AN APPOINTMENT</a>
+                        <!--button1end-->
+
+                    </h4>
+                </div>
+
+            </div>
+
+            <img src="img/barber-website.gif" alt="image1" style="margin:0; padding:0;display:block;">
+
+            <!--section1end-->
+
+            <!--section2-->
+
+            <div id="section2-container" >
+
+                <img src="img/scissor.png" class="scissor" >
+                <section id="about" class="content">
+                    <!--typesection2-->
+
+                    <div class="section2text-container" >
+
+                        <p>If you’ve been to one of our barbershops, you’ve seen – and
+
+                        experienced what keeps our customers coming back for
+
+                         more. Perfect haircuts and shaves, be served delicious buns,
+
+                      and gourmet coffees it makes us hard to resist! Stop in today
+
+                        and check us out!</p>        
+
+                        <!--typesection2end-->
+
+                    </div>
+
+                    <img src="img/logopnggrey.png" class="logopnggrey" >
+
+                    <img src="img/background2.png" class="background2" alt="image2" >
+                </section>
+            </div>
+
+            <!--section2end-->
+            <div style="clear: both"></div>
+
+            <!--section3-->
+            
+                <!--Parallax Scroll-->
+                <div id="parallax">
+                 <div class="parallax-one">
+                     
+                     <div id="section3-container" >
+                     
+                    <div id="box" style="position:relative" > 
+                        <div class="section3text-container" >
+
+                            <h1>Fine cuts and shaves</h1>
+                            
+                            </div>
+
+                            <div class="text-body">
+                                
+                                <p >If you’ve been to one of our barbershops, you’ve seen – and</p>
+
+                                <p >tasted – what keeps our customers coming back for more.</p> 
+
+                                <p>Perfect cuts and shaves, freshly baked delicious food, like  </p>
+
+                                <p>cakes, buns, and gourmet coffees make us hard to resist!</p>
+
+                                <p>Stop in today and check us out!</p>
+
+                                <!--circularimages-->
+                            
+                                <div class="circleimage" >
+
+                                    <a class="fancybox" rel="group" href="img/photo2.jpg"><img src="img/img3big.png" /></a>
+
+                                    <a class="fancybox" rel="group" href="img/photo1.jpg"><img src="img/img2big.png" /></a>
+
+                                    <a class="fancybox" rel="group" href="img/photo3.jpg"><img src="img/img1big.png" /></a>           
+
+                                </div> 
+                                    
+                                <!--circularimagesend-->  
+                                
+                                
+                            </div>  
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div> 
+            <div style="clear: both"></div>
+            <!--section3end-->
+
+            <!--section4-->
+
+            <div id="section4-container">
+
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="img/barber4.jpg" alt="" style="margin:0; padding:0;display:block;">
+                        </li>
+                        <li>
+                            <img src="img/menuew-2.jpg" alt="" style="margin:0; padding:0;display:block;">
+                        </li>
+                    </ul>
+                </div>
+
+            </div> 
+            <div style="clear: both"></div>
+            <!--section4end-->
+
+            <!--section5-->
+
+            <div id="section5-container" >
+        
+                <div class="right-side">
+                    <h1 >Just the right look</h1>
+
+                    <img alt="" style="margin-left:70px;" src="img/dividersmall.png">
+
+                    <!--booking forum-->
+
+                    <div class="form-group"> 
+                        <label>Name</label>
+                        <input type = "text" id = "myText" placeholder = "your name*" >
+                    </div>
+
+                    <div class="form-group"> 
+                        <label>Email</label>
+                        <input type = "text" id = "myText" placeholder = "your email*"  />
+                    </div>
+                    <div class="form-group"> 
+                        <label>Date</label>
+                        <input type = "text" id = "myText" placeholder = "date*"  />
+                    </div>
+                    <div class="form-group"> 
+                        <label>Number</label>
+                        <input type = "text" id = "myText" placeholder = "number*" />
+                    </div>
+                    <button class="btn paper paper-raise open book-btn"><b>Book Now</b></button> 
+
+</div>
+                <!--Modal Window-->
+
+                <div class="modal-frame">
+                    <div class="modal">
+                        <div class="modal-inset">
+                            <div class="button close"><i class="fa fa-close"></i></div>             
+                            <div class="modal-body">
+
+                                <section class="container">
+                                    <div class="theCard">
+                                        <figure class="theCardFront">
+                                            <br class="clear" />
+                                            <div class="cardNumber">Card Number:<br/>
+                                                <input class="firstfour" placeholder="1111" maxlength="4"/>
+                                                <input placeholder="2222" maxlength="4" />
+                                                <input placeholder="3333" maxlength="4" />
+                                                <input placeholder="4444" maxlength="4" />
+                                            </div>
+                                            <div class="cardExpiration">Expiration Date:<br/>
+                                                <input class="month" placeholder="Mo" maxlength="2"/> / <input class="year" placeholder="Year" maxlength="4"/>
+                                            </div>
+                                            <div class="cardSecurity">Security Code:<br/>
+                                                <input class="csc" placeholder="CSC" maxlength="4"/>
+                                                <small><span class="tooltip">What's this?</span><span class="help">The CSC is typically printed on the back of a credit card (3 digit number).</span></small>
+                                            </div>
+                                            <br class="clear">
+                                            <input type="submit" value="Pay Now" class="pay"/>
+                                        </figure>
+                                        <figure class="theCardBack">
+                                            <div class="login">
+                                                <input placeholder="Username or email" class="username"/>
+                                                <input placeholder="Password" class="password"/><br />
+                                                <input type="submit" class="signIn" value="Login" />
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </section>    
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--Modal Window End-->
+
+                <!--Google Maps-->
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18490.146328128205!2d-5.9311083039819!3d54.599266105727196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48610856ce1bb5ef%3A0xaa3a67df08db1e90!2sLower+Garfield+St%2C+Belfast+BT1!5e0!3m2!1sen!2suk!4v1431039110375" frameborder="0" ></iframe>
+
+            </div>
+            <div style="clear: both"></div>
+            <!--section5end-->
+
+
+
+
+            <div class="section6footer" >
+
+                <div class="footer-content">
+                    <h1>About Us</h1>
+                    <img alt=""  src="img/dividersmall1.png">
+
+                    <p>
+                        Mens Buns and Beards has been newly expanded to Belfast featuring are legendaryselection of cuts and shaves you not bedissapointed when visiting our barbershops - sitback and relax with a cup of coffee and icedbun and get the right barber experience.
+                    </p>   
+
+                </div>
+          
+
+                <div class="footer-content">
+                    <h1>Opening Hours</h1>
+                    <img alt=""  src="img/dividersmall1.png">
+
+                    <p><b>Mon-Thu:</b> 7:00am-8:00pm </p>
+
+                    <p><b>Fri-Sun:</b> 7:00am-10:00pm </p>  
+
+                    <div class="paypent-icons">
+                        <img src="img/icon1.png" >  
+                        <img src="img/icon2.png"> 
+                        <img src="img/icon3.png">
+                        <img src="img/icon4.png" >
+
+                    </div>
+
+                </div>
+
+                <div class="footer-content">
+                    <h1 >Our location</h1>
+                    <img alt=""  src="img/dividersmall1.png">
+                    <p><b>Lower Garfield</b></p>
+                    <p><b>Street</b></p>
+
+
+                    <div class="social-icons">
+                        <!--Social media icons-->
+
+                        <a href="https://www.facebook.com/" target=”_blank”>   
+                            <img src="img/socialmedia1.png" >
+                        </a>
+
+                        <a href="https://www.youtube.com/" target=”_blank”>
+                            <img src="img/socialmedia2.png" >
+                        </a>
+
+                        <a href="https://twitter.com/" target=”_blank”>
+                            <img src="img/socialmedia3.png" >
+                        </a>
+
+                        <a href="https://www.linkedin.com/" target=”_blank”>
+                            <img src="img/socialmedia4.png" s>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div style="clear: both"></div>
+
+            <!-- fancybox -->
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $(".fancybox").fancybox();
+                });
+            </script>
+
+            <!-- fancyboxend -->
+
+            <!--Parallax Background-->
+
+            <div class="background">
+            </div>                        
+        </div>
+    </body>
+</html>

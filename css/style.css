@@ -1,0 +1,217 @@
+/* Content */
+
+#container {
+  display: block;
+  width: 1280px;
+  margin: 0 auto;
+  margin-top: -1%;
+  padding-bottom: 10px;
+ 
+}
+
+body{
+    
+max-width:100%;
+max-height:100%;
+ 
+}
+
+#section1-container {
+  display: block;
+  width: 1280px;
+  height: 100%;
+  padding-bottom: 10px;
+  position: relative;
+  
+}
+
+.section1text-container{
+
+position: relative
+
+}
+
+#section2-container{
+
+position: relative;
+width: 1280px;
+    
+}
+
+.section2text-container{
+
+position: relative;
+top:-641px;
+left:-335px;
+    
+}
+
+.section3-container{
+
+position: relative;
+width: 1280px;
+    
+}
+
+
+#section4-container{
+
+position: relative;
+width: 1280px;
+
+}
+
+#section5-container{
+position: relative;
+}
+
+.section5text-container{
+
+position: relative;
+top:-525px;
+left:-64px;
+text-align:center;
+width: 1280px;
+    
+}
+
+.section5forum-container{
+
+position: absolute;
+top: 14px; 
+left: 0px;
+display:block;
+    
+}
+
+.section6footer{position: relative;  
+}
+    
+img {
+    max-width: 100%;
+}
+
+/* h1 p typography */
+
+h5{
+
+@font-face 
+  font-family: 'Lato';
+  src: url('Lato-Regular.ttf');
+
+}
+
+h1{
+font-family: 'YesevaOne';
+src: url('YesevaOne-Regular_v2.otf');
+
+}
+
+
+h3{
+      
+    font-size: 121.5%;
+  line-height: 2.;
+   font-family: 'PT Sans', sans-serif;
+  
+}
+
+h4{
+  font-size: 121.5%;
+  line-height: 1.8;
+   font-family: 'PT Sans', sans-serif;
+    
+}
+
+/** nav bar **/
+
+.top-bar-container {
+  position: absolute;
+  top: -11px;
+  right: 224px;
+  margin: 0 auto;
+  z-index:999;
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-regular.ttf');
+}
+}
+
+.top-bar-container .top-bar {
+  width: 800px;
+
+}
+.top-bar-container .top-bar .logo {
+  float: left;
+}
+.top-bar-container .top-bar .logo span {
+  color: #27AD60;
+
+}
+.top-bar-container .nav-bar {
+  float: right;
+}
+.top-bar-container .nav-bar ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 21px 27px;
+  font-size:15px;
+
+  }
+.top-bar-container .nav-bar ul li a:not(.active) {
+  text-decoration: none;
+  color: white;
+}
+.top-bar-container .nav-bar .active {
+  color: white;
+  text-decoration: none;
+  padding-top:34px;
+}
+
+.underlining {
+  list-style: none;
+  
+}
+.underlining .hover {
+  display: block;
+}
+.underlining .hover a {
+  display: block;
+  padding: 16px;
+  color: grey;
+  text-decoration: none;
+  position: relative;
+}
+.underlining .hover a:hover, .underlining .hover a.selected{
+  color:white;
+}
+.underlining .hover a.selected:before, .underlining .hover a:hover:before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  top: -19px;
+  left: 0;
+  height: 3px;
+  background: white;
+}
+
+/* Parallax Scrolling Image */
+
+#parallax .parallax-one {overflow: hidden; position: relative; width: 100%; height: 100%; 
+    
+background-image: url(http://i.imgur.com/BdZAB4q.png?1); 
+    
+background-attachment: fixed; -moz-background-size: cover; background-repeat: no-repeat; background-position: top center;background-size:76%;padding-top:3%;}
+
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax .block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax .block {padding: 30px; width:420px;}
+  #parallax h2 {font-size:30px;}
+  #parallax .block {padding: 30px;}
+  #parallax .parallax-one, {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax .block {padding: 30px 15px; width:290px;}
+}
